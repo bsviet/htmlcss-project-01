@@ -1,0 +1,30 @@
+/* Basic Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Poppins",sans-serif;color:#1a1a1a;background-color:#f8f8f5;line-height:1.6}
+.header{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.05);position:sticky;top:0;z-index:10}
+.logo{font-weight:600;font-size:1.1rem;color:#007f89}
+.nav a{margin-left:1rem;text-decoration:none;color:#1a1a1a;font-size:.95rem}
+.nav a:hover{color:#007f89}
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:2rem 1rem;background:#eaf7f7}
+.hero h1{font-size:1.8rem;color:#007f89}
+.slogan{font-style:italic;color:#bfa14a;margin:.5rem 0 1rem}
+.hero-image img{width:80%;max-width:350px;border-radius:12px;margin-top:1rem}
+.btn-primary{background:#007f89;color:#fff;padding:.75rem 1.2rem;border-radius:25px;text-decoration:none;transition:.3s}
+.btn-primary:hover{background:#005f66}
+.btn-secondary{background:#f4e3b2;color:#1a1a1a;padding:.6rem 1rem;border-radius:20px;margin:.5rem;text-decoration:none;display:inline-block}
+.section{padding:3rem 1.5rem;text-align:center}
+.section h2{font-size:1.5rem;margin-bottom:1rem;color:#007f89}
+.section p{max-width:650px;margin:0 auto}
+.achievements{list-style:none;max-width:600px;margin:0 auto;text-align:left}
+.achievements li{margin-bottom:.5rem}
+.gallery{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+.gallery img{width:45%;border-radius:10px}
+.testimonials{display:flex;flex-direction:column;align-items:center;gap:1.5rem}
+.testimonial img{width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:.5rem}
+.contact-form{display:flex;flex-direction:column;gap:.8rem;max-width:400px;margin:0 auto 1.5rem}
+.contact-form input,.contact-form textarea{width:100%;padding:.7rem;border:1px solid #ccc;border-radius:8px}
+.contact-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem}
+.footer{text-align:center;padding:1.2rem;background:#eaf7f7;font-size:.9rem;color:#555}
+.fade-slide{opacity:0;transform:translateY(20px);transition:opacity .8s ease-out,transform .8s ease-out}
+.fade-slide.visible{opacity:1;transform:translateY(0)}
+@media(min-width:768px){.hero{flex-direction:row;text-align:left;justify-content:space-between;padding:4rem 6rem}.hero-content{flex:1;padding-right:2rem}.hero-image img{width:350px;margin-top:0}.testimonials{flex-direction:row}}
